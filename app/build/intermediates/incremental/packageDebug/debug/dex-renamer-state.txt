@@ -1,0 +1,4 @@
+#Tue Apr 17 10:34:40 WAT 2018
+base.0=C\:\\Users\\Lola\\AndroidStudioProjects\\Tictactoe2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

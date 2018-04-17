@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d4d4d"
+    tools:context="com.example.lola.tictactoe.PlayerActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tic_pattern"
+        android:scaleType="center"
+        android:alpha="0.12"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="10dp"
+        android:paddingLeft="60dp">
+
+    <TextView
+        android:id="@+id/ison1"
+        android:layout_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="4dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#E91E63"
+        android:text="Tic"/>
+
+    <TextView
+        android:id="@+id/ison2"
+        android:layout_toRightOf="@id/ison1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="1dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:text="Tac"/>
+
+    <TextView
+        android:id="@+id/ison3"
+        android:layout_toRightOf="@id/ison2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="1dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:text="Toe"/>
+
+        <Button
+            android:id="@+id/ison4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ison3"
+            android:layout_marginTop="60dp"
+            android:onClick="singlePlayer"
+            android:text="single player 3x3"
+            android:background="@drawable/button_selector"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="30dp"/>
+
+
+        <Button
+            android:textColor="@android:color/black"
+            android:id="@+id/ison5"
+            android:onClick="singlePlayerFive"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ison4"
+            android:layout_marginTop="30dp"
+            android:text="single player 5x5"
+            android:background="@drawable/button_selector"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:onClick="twoPlayer"
+            android:id="@+id/ison6"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ison5"
+            android:layout_marginTop="30dp"
+            android:text="Two player 3x3"
+            android:textColor="@android:color/black"
+            android:background="@drawable/button_selector"
+            android:layout_marginLeft="30dp"/>
+
+
+        <Button
+            android:id="@+id/ison7"
+            android:textColor="@android:color/black"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ison6"
+            android:layout_marginTop="30dp"
+            android:text="Two player 5x5"
+            android:onClick="twoPlayerFive"
+            android:background="@drawable/button_selector"
+            android:layout_marginLeft="30dp"/>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
